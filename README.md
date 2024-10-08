@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/cd15ede5-f09e-4dd5-aef8-4117d901d53b)
+
+
+
 # E-commerce React App
 
 This is an E-commerce application built with React. It provides a modern and responsive user interface for online shopping experiences.
