@@ -1,0 +1,315 @@
+/* Global Styles */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Color Variables */
+:root {
+  --color-blue-one: #064ACB;
+  --color-blue-secondary: #366ED8;
+  --color-accent-yellow: #F3A953;
+  --color-neutral-white: #F2F3F3;
+  --color-neutral-black: #454553;
+}
+
+/* Navigation Styles */
+.nav {
+  background-color: var(--color-accent-yellow);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Home Section Styles */
+.my-home {
+  background-color: var(--color-blue-one);
+  max-width: 3500px;
+  height: 85vb;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-text {
+  color: var(--color-neutral-white) !important;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vb;
+}
+
+.home-text h1 {
+  font-size: 5rem !important;
+  z-index: 2;
+}
+
+.circle-top {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--color-blue-secondary);
+  z-index: 1;
+}
+
+.circle-btm {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--color-blue-secondary);
+  z-index: 1;
+}
+
+/* Products Section Styles */
+.my-products {
+  background-color: var(--color-neutral-black);
+  width: 250px;
+  height: 85vb;
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.products-container {
+  color: var(--color-neutral-white) !important;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.add-product {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Card Styles */
+.card-body {
+  background-color: var(--color-blue-one) !important;
+  border-radius: 20px !important;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: var(--color-neutral-white);
+}
+
+.card-img-con {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: var(--color-neutral-white) !important;
+  flex-grow: 1;
+}
+
+.card-con {
+  border-radius: 50px !important;
+}
+
+.card-con img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 20px;
+  background-color: #fff;
+  scale: 0.8;
+}
+
+/* Count Badge */
+span.count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  color: var(--color-neutral-white);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-blue-secondary);
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cart Section Styles */
+.my-cart {
+  background-color: #5C4B77;
+  width: 250px;
+  height: 85vb;
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Table Styles */
+th {
+  color: var(--color-neutral-white) !important;
+  background-color: var(--color-blue-secondary) !important;
+  border: none !important;
+  padding: 10px;
+  margin: 10px !important;
+}
+
+td {
+  color: var(--color-neutral-white) !important;
+  background-color: var(--color-neutral-black) !important;
+  border: none !important;
+  padding: 10px;
+  margin: 10px !important;
+}
+
+tr {
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  color: var(--color-neutral-white) !important;
+  padding: 10px;
+}
+
+h5 {
+  color: var(--color-neutral-white) !important;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-neutral-black) !important;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .my-product,
+  .my-home {
+    width: 90% !important;
+  }
+  .products-container {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .my-products {
+    margin: 100px;
+    width: 90% !important;
+    height: 90vh !important;
+    overflow-x: hidden;
+  }
+  .products-container {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-text h1 {
+    font-size: 3rem !important;
+  }
+  .card-body {
+    max-width: 100%;
+    min-width: 100%;
+    height: 90%;
+    overflow-x: hidden;
+  }
+  span.count{
+    top: 15px;
+    right: -5px;
+  }
+  .row-col{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .row-col button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  td{
+    font-size: 1rem;
+    padding: 5px;
+    vertical-align: middle;
+  }
+
+}
+.submit-form input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--color-blue-secondary);
+}
+#fname,
+#lname,
+#email,
+#phone,
+#address,
+#city {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0 10px ;
+  border: none;
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-black);
+  border-radius: 10px;
+}
+/* Webkit browsers (Chrome, Safari, newer versions of Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-blue-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-one);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-one);
+}
+
+
+
+/* For IE and Edge (older versions) */
+* {
+  -ms-overflow-style: none;
+}
