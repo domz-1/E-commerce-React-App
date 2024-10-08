@@ -68,7 +68,6 @@ export default function CardPage() {
                     cancelButtonText: 'Cancel',
                     cancelButtonColor: '#3085d6',
                     confirmButtonColor: '#4caf50',
-                    confirmButtonText: 'Submit',
                     closeOnConfirm: false,
                     closeOnCancel: false,
                 preConfirm(){
