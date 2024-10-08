@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAllProducts } from "./productSlice";
 
 export const cardSlice = createSlice({
     name: "card",
