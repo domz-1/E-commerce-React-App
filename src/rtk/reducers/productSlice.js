@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const fetchAllProducts = createAsyncThunk('products/fetcha',
     async ()=>{
-    const response = await axios.get('http://localhost:9000/products')
+    const response = await axios.get('https://fakestoreapi.com/products')
     return response.data;
 })
 
